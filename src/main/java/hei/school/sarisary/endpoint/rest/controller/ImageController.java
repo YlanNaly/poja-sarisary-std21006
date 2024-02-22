@@ -26,4 +26,9 @@ public class ImageController {
 
     return service.getPresignedImageUrls(idOriginal, idGrey);
   }
+
+  @GetMapping("/black-and-white/{id}")
+  public String testURL() {
+    return "deployed";
+  }
 }
