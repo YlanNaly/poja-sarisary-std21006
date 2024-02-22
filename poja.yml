@@ -9,9 +9,9 @@ java_facade_it: FacadeIT
 package_full_name: hei.school.sarisary
 region: eu-west-3
 ses_source: noreply@nowhere.com
-ssm_sg_id: C:/Program Files/Git/bpartners-imagery/sg/id
-ssm_subnet1_id: C:/Program Files/Git/bpartners-imagery/private/subnet1/id
-ssm_subnet2_id: C:/Program Files/Git/bpartners-imagery/private/subnet2/id
+ssm_sg_id: /bpartners-imagery/sg/id
+ssm_subnet1_id: /bpartners-imagery/private/subnet1/id
+ssm_subnet2_id: /bpartners-imagery/private/subnet2/id
 ts_client_api_url_env_var_name: ''
 ts_client_default_openapi_server_url: ''
 with_database: sqlite

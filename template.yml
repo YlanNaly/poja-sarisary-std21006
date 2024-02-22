@@ -13,10 +13,10 @@ Globals:
     
     VpcConfig:
       SecurityGroupIds:
-        - !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/sg/id}}'
+        - !Sub '{{resolve:ssm:/bpartners-imagery/sg/id}}'
       SubnetIds:
-        - !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/private/subnet1/id}}'
-        - !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/private/subnet2/id}}'
+        - !Sub '{{resolve:ssm:/bpartners-imagery/private/subnet1/id}}'
+        - !Sub '{{resolve:ssm:/bpartners-imagery/private/subnet2/id}}'
     Environment:
       Variables:
         ENV: !Ref Env

@@ -41,17 +41,17 @@ Resources:
     Type: AWS::EFS::MountTarget
     Properties:
       FileSystemId: !Ref Filesystem
-      SubnetId: !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/private/subnet1/id}}'
+      SubnetId: !Sub '{{resolve:ssm:/bpartners-imagery/private/subnet1/id}}'
       SecurityGroups:
-        - !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/sg/id}}'
+        - !Sub '{{resolve:ssm:/bpartners-imagery/sg/id}}'
 
   MountTarget2:
     Type: AWS::EFS::MountTarget
     Properties:
       FileSystemId: !Ref Filesystem
-      SubnetId: !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/private/subnet2/id}}'
+      SubnetId: !Sub '{{resolve:ssm:/bpartners-imagery/private/subnet2/id}}'
       SecurityGroups:
-        - !Sub '{{resolve:ssm:C:/Program Files/Git/bpartners-imagery/sg/id}}'
+        - !Sub '{{resolve:ssm:/bpartners-imagery/sg/id}}'
 
 Outputs:
   AccessPointArnSSM:
